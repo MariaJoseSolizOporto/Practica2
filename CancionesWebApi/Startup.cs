@@ -29,7 +29,7 @@ namespace CancionesWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("MajoContext")));
+            options.UseSqlServer(Configuration.GetConnectionString("MajoController")));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
